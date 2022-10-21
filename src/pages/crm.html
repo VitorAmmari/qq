@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova CRM</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-crm">
+    <header>
+      <h1>Novo CRM</h1>
+      <p>Crie seu novo Controle de Requisição de Mudança</p>
+    </header>
+  
+    <form action="">
+  
+      <nav class="nav-crm">
+        <ul>
+          <li>CRM 0001</li>
+          <li>Em Andamento</li>
+          <li><a href="#" data-version="abrir">V 02</a></li>
+        </ul>
+      </nav>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do requerente</legend>
+  
+          <div class="matricula-wrapper">
+            <label for="matricula">Matrícula</label>
+            <p>800111</p>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Setores Envolvidos</legend>
+  
+          <div class="radio-wrapper">
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="mercantil" id="mercantil">
+              <label for="mercantil">Mercantil</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="cartao" id="cartao">
+              <label for="cartao">Cartão</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="rh" id="rh">
+              <label for="rh">RH</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="adm" id="adm">
+              <label for="adm">Administração</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="loja" id="loja">
+              <label for="loja">Loja</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do Projeto</legend>
+  
+          <div class="select-wrapper">
+            <label for="setor">Setor</label>
+            <select id="setor">
+              <option value="none"></option>
+              <option value="mercantil">Mercantil</option>
+              <option value="cartao">Cartão</option>
+            </select>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="demanda">Descrição da Demanda</label>
+            <textarea id="demanda" placeholder="Descrever em detalhes a demanda que precisa ser atendida."></textarea>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="objetivo">Objetivo a ser atendido</label>
+            <textarea id="objetivo" placeholder="Documentar os objetivos de forma SMART (eSpecífico, Mensurável, Atingível, Relevante, baseado em Tempo)."></textarea>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="justificativa">Justificativa</label>
+            <textarea id="justificativa" placeholder="Justificar o motivo pelo qual a mudança proposta precisa ser implementada."></textarea>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="alternativa">Alternativa</label>
+            <textarea id="alternativa" placeholder="Descrever, caso existam, alternativas à modificação proposta."></textarea>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="offline">Comportamento Offline ( Aplicável somente para o time Mercantil (CliQQ/PDV) )</label>
+            <textarea id="offline" placeholder="Descreva qual o comportamento essa mudança solicitada deve ter quando a Loja estiver Offline."></textarea>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>SISTEMAS ENVOLVIDOS NA MUDANÇA</legend>
+  
+          <div class="radio-wrapper">
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="cliqq" id="cliqq">
+              <label for="cliqq">CLIQQ</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="pdv" id="pdv">
+              <label for="pdv">PDV</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="verdecard" id="verdecard">
+              <label for="verdecard">VERDECARD</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="sap" id="sap">
+              <label for="sap">SAP</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="vcs" id="vcs">
+              <label for="vcs">VCS</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="legal-wrapper">
+          <legend>Data Legal de Obrigatoriedade</legend>
+  
+          <p>Possui data legal de obrigatoriedade de produção?</p>
+  
+          <div class="container-legal">
+            <div class="checkbox-wrapper">
+              <input type="radio" name="opcao" id="yes">
+              <label for="yes">Sim</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="radio" name="opcao" id="no">
+              <label for="no">Não</label>
+            </div>
+          </div>
+          
+          <div class="container-date">
+            <div class="date-wrapper">
+              <label for="inicio">Início</label>
+              <input type="date" id="inicio">
+            </div>
+            <div class="date-wrapper">
+              <label for="fim">Fim</label>
+              <input type="date" id="fim">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Anexos</legend>
+  
+          <input type="file" id="anexos" multiple>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="dependency-wrapper">
+  
+          <p>Esta CRM depende de outro desenvolvimento?</p>
+  
+          <div class="container-dependency">
+            <div class="checkbox-wrapper">
+              <input type="radio" name="option" id="sim">
+              <label for="sim">Sim</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="radio" name="option" id="nao">
+              <label for="nao">Não</label>
+            </div>
+          </div>
+  
+          <textarea id="dependencia" placeholder="Caso dependa informar o nome do projeto necessário."></textarea>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Aceite Equipe</legend>
+  
+          <div class="aceite-wrapper">
+            <p>Matrícula</p>
+            <p>Nome Completo</p>
+            <p>Setor</p>
+            <div class="checkbox-wrapper">
+              <input type="radio" name="option" id="aprovar">
+              <label for="aprovar">Aprovar</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="radio" name="option" id="rejeitar">
+              <label for="rejeitar">Rejeitar</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>TI</legend>
+  
+          <div class="container-check">
+            <div class="checkbox-wrapper">
+              <input type="radio" name="aprove" id="aprovado">
+              <label for="aprovado">Aprovar</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="radio" name="aprove" id="rejeitado">
+              <label for="rejeitado">Rejeitar</label>
+            </div>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="impacto">Impacto da mudança</label>
+            <textarea id="impacto"></textarea>
+          </div>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Complexidade</legend>
+  
+          <div class="radio-wrapper">
+            <div class="checkbox-wrapper">
+              <input type="radio" name="complex" id="alta">
+              <label for="alta">Alta</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="radio" name="complex" id="media">
+              <label for="media">Média</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="radio" name="complex" id="baixa">
+              <label for="baixa">Baixa</label>
+            </div>
+    
+            <div class="checkbox-wrapper">
+              <input type="radio" name="complex" id="muito-baixa">
+              <label for="muito-baixa">Muito Baixa</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+  
+      <div class="button-wrapper">
+        <button class="back">Voltar</button>
+        <button class="ok">Concluir</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="modal-version-container" data-version="container">
+    <div class="modal-version">
+      <button class="fechar" data-version="fechar">X</button>
+      <div class="container-version">
+        <div class="image-wrapper">
+          <p>Versão 01</p>
+          <a href=""><img src="/src/images/document-icon 1.png"></a>
+        </div>
+        <div class="image-wrapper">
+          <p>Versão 02</p>
+          <a href=""><img src="/src/images/document-icon 1.png"></a>
+        </div>
+        <div class="image-wrapper">
+          <p>Versão 03</p>
+          <a href=""><img src="/src/images/document-icon 1.png"></a>
+        </div>
+        <div class="image-wrapper">
+          <p>Versão 04</p>
+          <a href=""><img src="/src/images/document-icon 1.png"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/src/js/script.js" type="module"></script>
+</body>
+</html>

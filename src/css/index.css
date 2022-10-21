@@ -1,0 +1,64 @@
+.page-index {
+  background: linear-gradient(180deg, #3A6B35 29.69%, rgba(46, 253, 45, 0.0677083) 83.61%, rgba(52, 185, 52, 0.0777392) 99.99%);
+  height: 100vh;
+}
+
+.page-index header {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.page-index header img {
+  width: 35%;
+}
+
+.page-index main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7.5rem 0 7.5rem;
+  margin: auto;
+  margin-bottom: 5rem;
+  gap: 3rem;
+  background: #3A6B35;
+  width: 40rem;
+  height: 23rem;
+  border: 1px solid #000000;
+  border-radius: 1.875rem;
+}
+
+.page-index button {
+  height: 3.1875rem;
+  width: 17rem;
+  background: #CBD18F;
+  border-radius: .5rem;
+  border: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .page-index {
+    width: fit-content;
+    height: 200vh;
+    background: #efeffb;
+  }
+
+  .page-index header {
+    padding-bottom: 7.8125rem;
+  }
+
+  .page-index header img {
+    width: 60%;
+  }
+
+  .page-index main {
+    height: 100vh;
+  }
+}

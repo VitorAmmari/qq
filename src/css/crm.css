@@ -1,0 +1,243 @@
+.page-crm {
+  background: #97BC62;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-crm ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-crm li {
+  background: #97BC62;
+  padding: .625rem;
+  border-radius: 50% 50% 50% 50%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.nav-crm a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.page-crm header {
+  background: #3A6B35;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-crm header h1, .page-crm header p {
+  color: #FFFFFF;
+}
+
+.page-crm header h1 {
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.page-crm header p {
+  margin-top: 1.6875rem;
+  margin-bottom: 2.4375rem;
+}
+
+.page-crm form {
+  min-height: 18.75rem;
+  width: 46.875rem;
+  background: #FFFFFF;
+  margin: auto;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  padding: 1.875rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.page-crm form fieldset {
+  border: none;
+}
+
+.page-crm .fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-crm .fieldset-wrapper, .page-crm .legal-wrapper, .page-crm .dependency-wrapper {
+  margin-bottom: 4rem;
+}
+
+.page-crm form fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: .0625rem solid #E6E6F0;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: #253B51;
+}
+
+.page-crm .matricula-wrapper, .page-crm .select-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+}
+
+.page-crm .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page-crm .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  margin-top: 2rem;
+}
+
+.page-crm .legal-wrapper p, .page-crm .dependency-wrapper p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.page-crm .dependency-wrapper textarea {
+  width: 38rem;
+  margin-top: 3.125rem;
+}
+
+.page-crm .container-date, .page-crm .container-legal, .page-crm .container-dependency, .page-crm .container-check {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-crm .date-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.page-crm .select-wrapper select {
+  background: #FAFAFC;
+  border: .0625rem solid #E6E6F0;
+  border-radius: .5rem;
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: black;
+}
+
+.page-crm .date-wrapper input {
+  background: #FAFAFC;
+  border: .0625rem solid #E6E6F0;
+  border-radius: .5rem;
+  height: 3.875rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.page-crm textarea {
+  background: #FAFAFC;
+  border: .0625rem solid #E6E6F0;
+  border-radius: .5rem;
+  height: 13.375rem;
+  padding-left: 1.5rem;
+  padding-top: .3125rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: black;
+}
+
+#demanda {
+  height: 28.0625rem;
+}
+
+.page-crm .select-wrapper select {
+  width: 11rem;
+}
+
+.page-crm .matricula-wrapper label, .page-crm .select-wrapper label, .page-crm .input-wrapper label {
+  font-size: .9375rem;
+  line-height: 1.5rem;
+  color: #4E4958;
+}
+
+.page-crm .area-button {
+  align-self: center;
+  height: 2.5rem;
+  width: 9.375rem;
+  background: #008000;
+  border-radius: .5rem;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin: 2.5rem;
+  margin-bottom: 0rem;
+}
+
+.page-crm .radio-wrapper, .page-crm .aceite-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-crm ::placeholder {
+  color: #c8c7ca;
+}
+
+.page-crm .button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-crm .back {
+  height: 3rem;
+  width: 6rem;
+  background: #990011;
+  border-radius: .5rem;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.page-crm .ok {
+  height: 3rem;
+  width: 6rem;
+  background: #008000;
+  border-radius: .5rem;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .page-crm {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,82 @@
+.page-senha {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(180deg, #3A6B35 29.69%, rgba(46, 253, 45, 0.0677083) 83.61%, rgba(52, 185, 52, 0.0777392) 99.99%);
+}
+
+.page-senha main {
+  width: 21.875rem;
+	height: 31.25rem;
+	background: white;
+	border-radius: .625rem;
+	box-shadow: .3125rem 1.25rem 3.125rem #000;
+}
+
+.page-senha img {
+  padding: 0 2.5rem 0 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.page-senha .container-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.page-senha label{
+	justify-content: flex-start;
+	display: flex;
+	margin-left: 70px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.page-senha input{
+	width: 60%;
+	height: 2.5rem;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+	padding: .625rem;
+	border: none;
+	outline: none;
+	border-radius: .3125rem;
+}
+
+.page-senha .botoes {
+	display: flex;
+  margin: 0 1.25rem;
+  gap: 1.5625rem;
+}
+
+.page-senha button{
+	width: 60%;
+	height: 2.5rem;
+	margin: .625rem auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #008000;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 3.125rem;
+	outline: none;
+	border: none;
+	border-radius: .3125rem;
+	cursor: pointer;
+}
+
+.page-senha button:hover{
+	background: #015701;
+}
+
+.page-senha .back {
+	background: #990011;
+}
+
+.page-senha .back:hover {
+	background: #66000c;
+}

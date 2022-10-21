@@ -1,0 +1,130 @@
+.page-pesquisa {
+  background: #97BC62;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: .5625rem;
+  min-height: 100vh;
+}
+
+.page-pesquisa header {
+  background: #3A6B35;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-pesquisa header h1, .page-pesquisa header p {
+  color: #FFFFFF;
+}
+
+.page-pesquisa header h1 {
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.page-pesquisa header p {
+  margin-top: 1.6875rem;
+  margin-bottom: .625rem;
+}
+
+.page-pesquisa form {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  align-items: flex-start;
+  width: 23rem;
+  margin: 1.875rem auto;
+  padding: 0 .625rem;
+}
+
+.page-pesquisa legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+}
+
+.page-pesquisa .input-wrapper {
+  display: flex;
+  gap: .625rem;
+}
+
+.page-pesquisa .input-wrapper input {
+  background: #FAFAFC;
+  border: .0625rem solid #E6E6F0;
+  border-radius: .5rem;
+  height: 1.75rem;
+  width: 8rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: black;
+}
+
+.page-pesquisa form button {
+  width: 5.0625rem;
+  height: 1.75rem;
+  background: #008000;
+  border-radius: .5rem;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.page-pesquisa .container-crm {
+  display: flex;
+  max-width: 53.125rem;
+  justify-content: space-between;
+  margin: auto;
+  border: .0625rem solid black ;
+  border-radius: .5rem;
+  background: white;
+  padding: 1.25rem;
+}
+
+.page-pesquisa .crm-wrapper {
+  text-align: center;
+}
+
+.page-pesquisa .crm-wrapper p {
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 1.125rem;
+}
+
+.page-pesquisa footer button {
+  width: 5.0625rem;
+  height: 1.75rem;
+  background: #990011;
+  border-radius: .5rem;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.875rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .page-pesquisa {
+    width: fit-content;
+  }
+
+  .page-pesquisa footer button {
+    margin-top: .625rem;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-pesquisa">
+    <header>
+      <h1>Pesquisa</h1>
+      <p>Visualizar CRM existentes</p>
+    </header>
+
+    <form action="">
+      <legend>Filtrar por:</legend>
+
+      <div class="input-wrapper">
+        <input type="number" id="crm">
+        <label for="crm">Número de CRM</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="number" id="matricula">
+        <label for="matricula">Matrícula do Solicitante</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="number" id="inicio">
+        <label for="inicio">Data de Início</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="number" id="fim">
+        <label for="fim">Data de Fim</label>
+      </div>
+
+      <button>Pesquisar</button>
+    </form>
+
+    <div class="container-crm">
+      <div class="crm-wrapper">
+        <p>CRM 0001</p>
+        <a href=""><img src="/src/images/document-icon 1.png"></a>
+        <p>980111</p>
+      </div>
+      <div class="crm-wrapper">
+        <p>CRM 0002</p>
+        <a href=""><img src="/src/images/document-icon 1.png"></a>
+        <p>980222</p>
+      </div>
+      <div class="crm-wrapper">
+        <p>CRM 0003</p>
+        <a href=""><img src="/src/images/document-icon 1.png"></a>
+        <p>980333</p>
+      </div>
+      <div class="crm-wrapper">
+        <p>CRM 0004</p>
+        <a href=""><img src="/src/images/document-icon 1.png"></a>
+        <p>980444</p>
+      </div>
+    </div>
+
+    <footer>
+      <button class="back">Voltar</button>
+    </footer>
+
+    <script src="/src/js/script.js" type="module"></script>
+</body>
+</html>

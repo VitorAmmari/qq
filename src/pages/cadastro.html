@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Colaborador</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-cadastro">
+    <header>
+      <h1>Cadastro</h1>
+      <p>Cadastrar usuários na base de dados do CRM</p>
+    </header>
+
+    <form action="">
+      <fieldset>
+        <div class="fieldset-wrapper">
+
+          <div class="colunm-one">
+            <div class="input-wrapper">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome">
+            </div>
+            <div class="input-wrapper">
+              <label for="surname">Sobrenome</label>
+              <input type="text" id="surname">
+            </div>
+          </div>
+
+          <div class="colunm-two">
+            <div class="input-wrapper">
+              <label for="mail">Email</label>
+              <input type="email" id="mail">
+            </div>
+          </div>
+
+          <div class="colunm-tree">
+            <div class="input-wrapper">
+              <label for="matricula">Matrícula</label>
+              <input type="text" id="matricula">
+            </div>
+            <div class="input-wrapper">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha">
+            </div>
+          </div>
+          
+          <div class="colunm-four">
+            <div class="selecto-wrapper">
+              <label for="area-cadastro">Setor</label>
+              <select id="area-cadastro">
+                <option value="none"></option>
+                <option value="mercantil">Mercantil</option>
+                <option value="cartao">Cartão</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <button class="cadastrar">Cadastrar Membro</button>
+      <button class="back">Voltar</button>
+    </form>
+  </div>
+
+  <script src="/src/js/script.js" type="module"></script>
+</body>
+</html>

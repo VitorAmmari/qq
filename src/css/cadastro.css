@@ -1,0 +1,136 @@
+.page-cadastro {
+  background: #97BC62;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: .625rem;
+  min-height: 100vh;
+}
+
+.page-cadastro header {
+  background: #3A6B35;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-cadastro header h1, .page-cadastro header p {
+  color: #FFFFFF;
+}
+
+.page-cadastro header h1 {
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.page-cadastro header p {
+  margin-top: 1.6875rem;
+  margin-bottom: 2.4375rem;
+}
+
+.page-cadastro form {
+  width: 46.875rem;
+  background: #FFFFFF;
+  margin: auto;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  padding: 0rem 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-cadastro form fieldset {
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.page-cadastro .colunm-one, .page-cadastro .colunm-tree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-cadastro .input-wrapper, .page-cadastro .selecto-wrapper {
+  margin-top: 2rem;
+}
+
+.page-cadastro .input-wrapper input, .page-cadastro .selecto-wrapper select {
+  background: #FAFAFC;
+  border: .0625rem solid #E6E6F0;
+  border-radius: .5rem;
+  height: 3.5rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: black;
+}
+
+.page-cadastro .input-wrapper label, .page-cadastro .selecto-wrapper label {
+  font-size: .9375rem;
+  line-height: 1.5rem;
+  color: #4E4958;
+}
+
+.page-cadastro .cadastrar {
+  height: 2.5rem;
+  width: 8.75rem;
+  align-self: center;
+  background: #008000;
+  border-radius: .5rem;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2.25rem;
+}
+
+.page-cadastro .back {
+  height: 2rem;
+  width: 6rem;
+  background: #990011;
+  border-radius: .5rem;
+  font-family: 'Staatliches', cursive;
+  font-size: .9375rem;
+  line-height: 1.625rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 767px) {
+  .page-cadastro {
+    width: fit-content;
+    height: 100vh;
+  }
+
+  .page-cadastro header {
+    height: 20rem;
+  }
+
+  .page-cadastro form {
+    align-items: center;
+  }
+
+  .page-cadastro form fieldset {
+    margin-top: 6.25rem;
+  }
+
+  .page-cadastro .colunm-one, .page-cadastro .colunm-tree {
+    flex-direction: column;
+  }
+
+  .page-cadastro .cadastrar {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .page-cadastro .back {
+    align-self: center;
+  }
+}
