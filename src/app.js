@@ -2,20 +2,26 @@ const express = require("express")
 const app = express()
 const PORT = 3333
 const User = require("../models/User")
+const Aceite = require("../models/Aceite")
+const Area = require("../models/Area")
+const Complexidade = require("../models/Complexidade")
+const Crm = require("../models/Crm")
+const Setor_crm = require("../models/Setor_crm")
+const sistemas_envolvidos = require("../models/Sistemas_envolvidos")
 
 app.use(express.json())
 app.use(express.static(__dirname + "/css"))
 app.use(express.static(__dirname + "/images"))
 
-app.get("/home", async(req, res) => {
+app.get("/", async(req, res) => {
   res.sendFile(__dirname + "/pages/login.html")
 })
 
-app.get("/index", async(req, res) => {
+app.get("/home", async(req, res) => {
   res.sendFile(__dirname + "/pages/index.html")
 })
 
-app.get("/index2", async(req, res) => {
+app.get("/home2", async(req, res) => {
   res.sendFile(__dirname + "/pages/index-2.html")
 })
 
