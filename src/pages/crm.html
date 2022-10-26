@@ -16,7 +16,7 @@
       <p>Crie seu novo Controle de Requisição de Mudança</p>
     </header>
   
-    <form action="">
+    <form action="/crm" method="POST">
   
       <nav class="nav-crm">
         <ul>
@@ -85,27 +85,27 @@
   
           <div class="input-wrapper">
             <label for="demanda">Descrição da Demanda</label>
-            <textarea id="demanda" placeholder="Descrever em detalhes a demanda que precisa ser atendida."></textarea>
+            <textarea id="demanda" name="demanda" placeholder="Descrever em detalhes a demanda que precisa ser atendida."></textarea>
           </div>
   
           <div class="input-wrapper">
             <label for="objetivo">Objetivo a ser atendido</label>
-            <textarea id="objetivo" placeholder="Documentar os objetivos de forma SMART (eSpecífico, Mensurável, Atingível, Relevante, baseado em Tempo)."></textarea>
+            <textarea id="objetivo" name="objetivo" placeholder="Documentar os objetivos de forma SMART (eSpecífico, Mensurável, Atingível, Relevante, baseado em Tempo)."></textarea>
           </div>
   
           <div class="input-wrapper">
             <label for="justificativa">Justificativa</label>
-            <textarea id="justificativa" placeholder="Justificar o motivo pelo qual a mudança proposta precisa ser implementada."></textarea>
+            <textarea id="justificativa" name="justificativa" placeholder="Justificar o motivo pelo qual a mudança proposta precisa ser implementada."></textarea>
           </div>
   
           <div class="input-wrapper">
             <label for="alternativa">Alternativa</label>
-            <textarea id="alternativa" placeholder="Descrever, caso existam, alternativas à modificação proposta."></textarea>
+            <textarea id="alternativa" name="alternativa" placeholder="Descrever, caso existam, alternativas à modificação proposta."></textarea>
           </div>
   
           <div class="input-wrapper">
             <label for="offline">Comportamento Offline ( Aplicável somente para o time Mercantil (CliQQ/PDV) )</label>
-            <textarea id="offline" placeholder="Descreva qual o comportamento essa mudança solicitada deve ter quando a Loja estiver Offline."></textarea>
+            <textarea id="offline" name="offline" placeholder="Descreva qual o comportamento essa mudança solicitada deve ter quando a Loja estiver Offline."></textarea>
           </div>
         </div>
       </fieldset>
@@ -163,11 +163,11 @@
           <div class="container-date">
             <div class="date-wrapper">
               <label for="inicio">Início</label>
-              <input type="date" id="inicio">
+              <input type="date" id="inicio" name="inicio">
             </div>
             <div class="date-wrapper">
               <label for="fim">Fim</label>
-              <input type="date" id="fim">
+              <input type="date" id="fim" name="fim">
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@
         <div class="fieldset-wrapper">
           <legend>Anexos</legend>
   
-          <input type="file" id="anexos" multiple>
+          <input type="file" name="anexos" id="anexos" multiple>
         </div>
       </fieldset>
   
@@ -197,7 +197,7 @@
             </div>
           </div>
   
-          <textarea id="dependencia" placeholder="Caso dependa informar o nome do projeto necessário."></textarea>
+          <textarea id="dependencia" name="dependencia" placeholder="Caso dependa informar o nome do projeto necessário."></textarea>
         </div>
       </fieldset>
   
@@ -210,11 +210,11 @@
             <p>Nome Completo</p>
             <p>Setor</p>
             <div class="checkbox-wrapper">
-              <input type="radio" name="option" id="aprovar">
+              <input type="radio" name="option2" id="aprovar">
               <label for="aprovar">Aprovar</label>
             </div>
             <div class="checkbox-wrapper">
-              <input type="radio" name="option" id="rejeitar">
+              <input type="radio" name="option2" id="rejeitar">
               <label for="rejeitar">Rejeitar</label>
             </div>
           </div>
@@ -238,7 +238,7 @@
   
           <div class="input-wrapper">
             <label for="impacto">Impacto da mudança</label>
-            <textarea id="impacto"></textarea>
+            <textarea id="impacto" name="impacto"></textarea>
           </div>
         </div>
       </fieldset>
