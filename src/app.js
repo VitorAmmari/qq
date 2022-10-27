@@ -32,6 +32,10 @@ app.get("/home2", async(req, res) => {
   res.sendFile(__dirname + "/pages/index-2.html")
 })
 
+app.get("/hhome", async(req, res) => {
+  res.sendFile(__dirname + "/pages/indexcrm.html")
+})
+
 app.get("/cadastrar", async(req, res) => {
   res.sendFile(__dirname + "/pages/cadastro.html")
 })
@@ -102,7 +106,7 @@ app.post("/crm", async(req, res) => {
     })
   })
   .then(() => {
-    res.redirect("/home")
+    res.redirect("/hhome")
   }).catch((e) => {
     res.send("Erro: CRM não foi registrada" + e)
   })
