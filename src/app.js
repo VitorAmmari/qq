@@ -36,7 +36,7 @@ app.get("/cadastrar", async(req, res) => {
   res.sendFile(__dirname + "/pages/cadastro.html")
 })
 
-app.get("/cadastrar2", async(req, res) => {
+app.get("/cadastraar", async(req, res) => {
   res.sendFile(__dirname + "/pages/cadastro2.html")
 })
 
@@ -58,11 +58,14 @@ app.post("/cadastrar", async(req, res) => {
     nome: req.body.nome,
     sobrenome: req.body.surname,
     email: req.body.mail,
-    senha: req.body.senha,
-    setor: req.body.area
+    senha: req.body.senha
+  }).then(() => {
+    Area.create({
+      nome: req.body.area
+    })
   })
   .then(() => {
-    res.redirect("/cadastrar2")
+    res.redirect("/cadastraar")
   }).catch((e) => {
     res.send("Erro: Usuário não foi registrado" + e)
   })
@@ -83,6 +86,20 @@ app.post("/crm", async(req, res) => {
     txt_dependencia: req.body.dependencia,
     impacto: req.body.impacto,
     anexos: req.body.anexos
+  })
+  .then(() => {
+    Setor_crm.create({
+      nome: req.body.setorcrm
+    })
+  })
+  .then(() => {
+    sistemas_envolvidos.create({
+      nome: req.body.sistemas
+    })
+  }).then(() => {
+    Complexidade.create({
+      nome: req.body.complex
+    })
   })
   .then(() => {
     res.redirect("/home")

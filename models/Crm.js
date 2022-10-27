@@ -34,7 +34,7 @@ const Crm = db.define("crm", {
     allowNull: true
   },
   data_legal: {
-    type: Sequelize.TINYINT,
+    type: Sequelize.STRING,
     allowNull: false
   },
   data_inicio: {
@@ -46,7 +46,7 @@ const Crm = db.define("crm", {
     allowNull: true
   },
   dependencia: {
-    type: Sequelize.TINYINT,
+    type: Sequelize.STRING,
     allowNull: false
   },
   txt_dependencia: {
