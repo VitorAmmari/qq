@@ -3,7 +3,7 @@ export default function backIndex() {
 
   function voltarIndex(event) {
     event.preventDefault()
-    window.location.href = "/src/pages/index.html"
+    window.location.href = "/home"
   }
 
   botaoVoltar.addEventListener('click', voltarIndex)

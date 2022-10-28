@@ -19,6 +19,7 @@ app.use(bodyParser.json())
 
 app.use(express.static(__dirname + "/css"))
 app.use(express.static(__dirname + "/images"))
+app.use(express.static(__dirname + "/js"))
 
 app.get("/", async(req, res) => {
   res.sendFile(__dirname + "/pages/login.html")
@@ -53,7 +54,9 @@ app.get("/alterar-senha", async(req, res) => {
 })
 
 app.get("/pesquisar", async(req, res) => {
-  res.sendFile(__dirname + "/pages/pesquisa.html")
+  Crm.findAll().then((posts) => {
+    res.sendFile(__dirname + "/pages/pesquisa.html", {posts: posts})
+  })
 })
 
 app.post("/cadastrar", async(req, res) => {
@@ -98,7 +101,7 @@ app.post("/crm", async(req, res) => {
   })
   .then(() => {
     sistemas_envolvidos.create({
-      nome: req.body.sistemas
+      nome: JSON.stringify(req.body.sistemas)
     })
   }).then(() => {
     Complexidade.create({
