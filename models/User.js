@@ -1,4 +1,5 @@
 const Sequelize = require("sequelize")
+const Crm = require("./Crm")
 const db = require("./db")
 
 const User = db.define("usuarios", {
@@ -20,6 +21,10 @@ const User = db.define("usuarios", {
     allowNull: false
   },
   senha: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  setor: {
     type: Sequelize.STRING,
     allowNull: false
   }

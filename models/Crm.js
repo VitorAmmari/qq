@@ -1,5 +1,6 @@
 const Sequelize = require("sequelize")
 const db = require("./db")
+const User = require("./User")
 
 const Crm = db.define("crm", {
   id: {
@@ -60,6 +61,22 @@ const Crm = db.define("crm", {
   anexos: {
     type: Sequelize.BLOB,
     allowNull: true
+  },
+  setor_crm: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  sistemas_envolvidos: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  complexidade: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  setores_envolvidos: {
+    type: Sequelize.STRING,
+    allowNull: false
   }
 })
 

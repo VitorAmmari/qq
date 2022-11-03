@@ -1,18 +1,20 @@
 const express = require("express")
 const app = express()
 const bodyParser = require("body-parser")
+const session = require("express-session")
 
 const PORT = 3333
 
 const User = require("../models/User")
 const Aceite = require("../models/Aceite")
-const Area = require("../models/Area")
-const Complexidade = require("../models/Complexidade")
 const Crm = require("../models/Crm")
-const Setor_crm = require("../models/Setor_crm")
-const sistemas_envolvidos = require("../models/Sistemas_envolvidos")
+
+let login = "admin"
+let password = 123456
 
 app.use(express.json())
+
+app.use(session({secret: "segredo"}))
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -22,7 +24,15 @@ app.use(express.static(__dirname + "/images"))
 app.use(express.static(__dirname + "/js"))
 
 app.get("/", async(req, res) => {
-  res.sendFile(__dirname + "/pages/login.html")
+  if(req.session.entrar) {
+   res.sendFile(__dirname + "/pages/index.html")
+  } else {
+    res.sendFile(__dirname + "/pages/login.html")
+  }
+})
+
+app.get("/e", async(req, res) => {
+  res.sendFile(__dirname + "/pages/loogin.html")
 })
 
 app.get("/home", async(req, res) => {
@@ -54,9 +64,18 @@ app.get("/alterar-senha", async(req, res) => {
 })
 
 app.get("/pesquisar", async(req, res) => {
-  Crm.findAll().then((posts) => {
-    res.sendFile(__dirname + "/pages/pesquisa.html", {posts: posts})
-  })
+  res.sendFile(__dirname + "/pages/pesquisa.html")
+})
+
+app.post("/", async(req, res) => {
+  if(req.body.senhada == password && req.body.entrar == login) {
+    req.session.entrar = login
+
+    res.sendFile(__dirname + "/pages/index.html")
+
+  } else {
+    res.sendFile(__dirname + "/pages/loogin.html")
+  }
 })
 
 app.post("/cadastrar", async(req, res) => {
@@ -65,11 +84,8 @@ app.post("/cadastrar", async(req, res) => {
     nome: req.body.nome,
     sobrenome: req.body.surname,
     email: req.body.mail,
-    senha: req.body.senha
-  }).then(() => {
-    Area.create({
-      nome: req.body.area
-    })
+    senha: req.body.senha,
+    setor: req.body.area
   })
   .then(() => {
     res.redirect("/cadastraar")
@@ -92,21 +108,11 @@ app.post("/crm", async(req, res) => {
     dependencia: req.body.option,
     txt_dependencia: req.body.dependencia,
     impacto: req.body.impacto,
-    anexos: req.body.anexos
-  })
-  .then(() => {
-    Setor_crm.create({
-      nome: req.body.setorcrm
-    })
-  })
-  .then(() => {
-    sistemas_envolvidos.create({
-      nome: JSON.stringify(req.body.sistemas)
-    })
-  }).then(() => {
-    Complexidade.create({
-      nome: req.body.complex
-    })
+    anexos: req.body.anexos,
+    setor_crm: req.body.setorcrm,
+    sistemas_envolvidos: JSON.stringify(req.body.sistemas),
+    complexidade: req.body.complex,
+    setores_envolvidos: JSON.stringify(req.body.setores)
   })
   .then(() => {
     res.redirect("/hhome")
